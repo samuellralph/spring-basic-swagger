@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  postgres_cadastro:
+    container_name: webcustom
+    image: postgres:13.1
+    environment:
+      POSTGRES_USER: webcustom
+      POSTGRES_PASSWORD: webcustom
+    ports:
+      - "5432:5432"
